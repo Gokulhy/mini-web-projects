@@ -1,0 +1,111 @@
+*::before,*::after{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    color:RGB(29, 185, 84);
+}
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.tic{
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,auto);
+    justify-items: center;
+    align-items: center;
+}
+.cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color:2px solid white;
+    opacity: 0.7;
+    border: 2px solid white
+}
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: 0;
+}
+.cell:nth-child(3n+1){
+    border-left: 0;
+}
+.cell:nth-child(3n+3){
+    border-right: 0;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){
+    border-bottom: 0;
+}
+.cell.x::after,.cell.x::before{
+    content:'';
+    width: 10px;
+    height: 90px;
+    background-color:white;
+    position: absolute;
+}
+.cell.x::before{
+     transform: rotate(45deg);
+}
+.cell.x::after{
+    transform: rotate(-45deg);
+}
+.cell.o::before,.cell.o::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+.cell.o::before{
+    width:90px;
+    height: 90px;
+    background-color: white
+}
+.cell.o::after{
+    width:70px;
+    height: 70px;
+    background-color:black;
+}
+.result{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 600
+}
+.result button{
+    padding: 10px;
+    border-radius:40px ;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 600
+}
+.result.show{
+    display: flex;
+    color: white;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .reuslta{
+        text-align: center;
+    }
+}

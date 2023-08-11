@@ -22,8 +22,8 @@ function addtask(e){
         li.appendChild(d)
         ogcontainer.append(li)
         inputbox.value=''
+        savedata()
     }
-    
 }
 
 submit.addEventListener('click',()=>{
@@ -41,5 +41,13 @@ ogcontainer.addEventListener('click', (e) => {
             listElement.remove();
         }
     }
+    savedata()
     })
+function savedata(){
+    localStorage.setItem('data',ogcontainer.innerHTML)
+}
+function showdata(){
+    ogcontainer.innerHTML=localStorage.getItem('data')
+}
+showdata()
 })

@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'popins',sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    height: 100vh;
+    background:linear-gradient(135deg,#052b78,#4e085f) ;
+    padding: 10px;
+}
+.todo-app{
+    width:300px;
+    height:100px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 25px 20px 20px;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 14px 14px 14px 14px;
+    margin: 4px 0px 0px 0px;
+}
+.row input{
+    width: 220px;
+    padding: 4px;
+    border-radius: 10px;
+    border:0px;
+}
+.row button{
+    font-size: 1rem;
+    border: 0px;
+    width:70px;
+    background-color:#5783db;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    padding: 4px;
+    border-radius: 14px;
+    border:0px;
+    color: white;
+}
+.content{
+    width:300px;
+    height:max-content;
+    background: white;
+    color: black;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px
+}
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type:none;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+ul li.cross{
+    text-decoration: line-through;
+}
+ul button{
+    background-color: transparent;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+ul button {
+  background:#5783db;
+  color: white; /* Set text color to white for better visibility */
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+ul button:hover {
+  background: linear-gradient(135deg, #4e085f, #052b78);
+  color: #fff; /* Hover text color */
+  transform: scale(1.05);
+}

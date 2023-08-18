@@ -28,7 +28,7 @@ body{
     background-color: wheat;
     position: absolute;
     right:149px;
-    bottom: 150px;
+    bottom: 149px;
     transform-origin: 0 100%;
 }
 #hours{
@@ -37,7 +37,7 @@ body{
     background-color:aliceblue;
     position: absolute;
     right: 148px;
-    bottom: 150px;
+    bottom: 148px;
     transform-origin: 0 100%;
 }
 .circle{

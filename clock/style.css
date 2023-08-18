@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+.clock{
+    height:300px;
+    width:300px;
+    border-radius: 150px;
+    border: solid 4px aquamarine;
+    opacity: 0.7;
+    position: absolute;
+}
+#seconds{
+    height: 130px;
+    width: 2px;
+    background-color: red;
+    position: absolute;
+    right: 150px;
+    bottom: 150px;
+    transform-origin: 0 100%;
+}
+#minutes{
+    height: 100px;
+    width: 2px;
+    background-color: wheat;
+    position: absolute;
+    right:149px;
+    bottom: 150px;
+    transform-origin: 0 100%;
+}
+#hours{
+    height: 80px;
+    width: 4px;
+    background-color:aliceblue;
+    position: absolute;
+    right: 148px;
+    bottom: 150px;
+    transform-origin: 0 100%;
+}
+.circle{
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border-radius: 7px;
+    left:146px;
+    bottom: 147px;
+    background: aquamarine;
+}

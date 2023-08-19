@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    flex-direction: column;
+  }
+  
+  canvas {
+    border: 2px solid #222;
+  }
+ 
+.b1 {
+  border-radius: 20px;
+  margin:10px auto ;
+  color: aliceblue;
+  background-color: #222;
+  transform: scale(2);
+}
